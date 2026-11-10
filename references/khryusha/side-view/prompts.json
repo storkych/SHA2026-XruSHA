@@ -1,0 +1,66 @@
+{
+  "tool": "built-in image_gen",
+  "common_prompt": "Use case: stylized-concept. Produce ONE full landscape 16:9 actual gameplay art reference for a SMALL 2D SIDE-VIEW PLATFORM ARENA game called \"хрюША\". Absolutely SIDE VIEW, camera perpendicular to action, not top-down, not isometric. All characters stand and jump on horizontal platforms. Show ONE compact readable arena: 5 to 7 platforms across three height levels, generous air gaps, a clearly visible dangerous bottomless chasm BELOW the platforms, a traversable jump route, main wide fighting platform lower-middle, two small elevated side platforms. Platforms occupy lower 65% of frame; leave sky space above. No solid floor closing off the bottom. Hero: a small expressive PINK PIG traveler, red scarf, tiny backpack, holding a funny turquoise SOAP BUBBLE toy blaster with a rounded bottle tank and a ring-shaped muzzle. Opponents: 3 recognizable funny HORSES, with long muzzles, manes, four legs. Show pig airborne shooting right; one horse on another platform gets pushed toward its edge by a big soap bubble; another prepares a leap; one stands higher. Communicate jumping, projectile combat and knockback toward the abyss using clean restrained motion cues. Harmless comic reactions, no blood. Characters must be at GAMEPLAY SCALE, approximately 8-13% of frame height, never giant foreground concept portraits. A polished plausible game screenshot, not key art, not an art board or collage. Minimal tiny HUD only: small \"хрюША\" upper left, three small health icons, small score upper right. No big HUD bars, no cards or panels, no bottom action buttons, no mouse cursor, no device mockup. No realistic firearms, no photorealism.",
+  "directions": [
+    {
+      "number": "01",
+      "name": "МЫЛЬНЫЙ МУЛЬТФИЛЬМ",
+      "art_direction": "Modern clean 2D cartoon animation: rounded expressive shapes, confident dark plum outlines, mint greens, peach pink, butter yellow. Sunny floating garden platforms with rounded grassy tops, visible earth cross-sections, rope bridge fragments, blue open sky and soft distant clouds. Delightful polished indie animation, crisp flat fills and subtle cel shadows. NO pixel art.",
+      "file": "01-bubble-toon.png"
+    },
+    {
+      "number": "02",
+      "name": "РИСОВАННОЕ ПУТЕШЕСТВИЕ",
+      "art_direction": "Beautiful hand-painted 2D gouache animation, warm golden-hour countryside, textured brushwork, expressive storybook pig and horses with readable silhouettes, mossy stone floating platforms, hanging grasses, distant pastel hills and clouds. Atmospheric but simple playable foreground, illustrated textures and soft painterly lighting, no 3D, no pixel art.",
+      "file": "02-painted-adventure.png"
+    },
+    {
+      "number": "03",
+      "name": "КОМИКС",
+      "art_direction": "Bold indie comic-book art: chunky black ink contours, dynamic angular animal silhouettes, controlled halftone shadows, cream, tomato red, teal, mustard yellow. Platforms constructed from comic-styled wooden farm scaffolds suspended over a chasm. Large clear graphic shapes, restrained action lettering, energetic cartoon comedy, no pixel art.",
+      "file": "03-comic.png"
+    },
+    {
+      "number": "04",
+      "name": "КРУПНЫЙ ПИКСЕЛЬ",
+      "art_direction": "Authentic chunky low-resolution pixel art, simulated native 480x270 composition enlarged by nearest-neighbor. Strict pixel grid, 1-2 pixel dark purple sprite outlines, limited 20-color palette of mint, coral, violet and warm cream, clean square pixels, no smoothing, NO HD texturing or vector characters. Large readable pixel pig and comic horses, floating grassy dirt tiles, little pixel flowers, clouds, sunny sky. Inspired by achievable small indie platform fighting games, not a detailed RPG.",
+      "file": "04-chunky-pixel.png"
+    },
+    {
+      "number": "05",
+      "name": "АТМОСФЕРНЫЙ ПИКСЕЛЬ",
+      "art_direction": "Rich beautiful hand-authored 2D pixel art with clean pixel clusters, native 640x360-style frame, nearest-neighbor edges, layered forest parallax, emerald moss, cyan mist and warm amber lights. Floating ruined stone forest platforms, pink pig explorer sprite with red scarf and turquoise bubble toy, recognizable horse sprites. Restrained luminous soap bubbles drawn in pixels. Moody verdant adventure, high readability foreground against quiet blue-green background, no vector graphics.",
+      "file": "05-lush-pixel.png"
+    },
+    {
+      "number": "06",
+      "name": "БУМАЖНАЯ АРЕНА",
+      "art_direction": "Tactile colored-paper cutout collage: visible fine paper fibers, handmade scissor edges, flat character pieces and tiny layer-contact shadows. Butter yellow background, sage green platform tops, terracotta earth, coral pink pig, red scarf, warm brown horses. Floating platforms visibly made from layered cardboard and craft paper, hanging paper vines, paper clouds. All elements 2D cut-paper, no plastic 3D, no pixel art.",
+      "file": "06-paper.png"
+    },
+    {
+      "number": "07",
+      "name": "РЕТРО-МУЛЬТФИЛЬМ",
+      "art_direction": "Whimsical vintage 1930s rubber-hose animation in limited COLOR, cream parchment, dusty teal, salmon pink, faded ochre, black ink, light cel grain. Funny expressive pig with rubber-hose arms and small backpack, pie-cut eyes; elastic comic horses, exaggerated harmless tumble. Floating old cartoon barnyard plank platforms over canyon, simple ink mountains and clouds. Funny oversized soap-bubble trumpet gun, no realistic gun. No pixel art.",
+      "file": "07-retro-cartoon.png"
+    },
+    {
+      "number": "08",
+      "name": "ЛУННАЯ СКАЗКА",
+      "art_direction": "Elegant 2D dark fairytale illustration: midnight indigo and desaturated blue woodland, lavender fog, silvery moonlight, luminous pastel pink pig with red scarf, bright iridescent bubbles. Floating gnarled tree-root and mossy stone platforms above a deep mysterious ravine. Expressive charming horse opponents, ink contours and hand-painted cel shading, refined atmospheric indie game art, readable bright foreground edges. Dreamy adventurous, not horror, no pixel art, no 3D.",
+      "file": "08-moonlit.png"
+    },
+    {
+      "number": "09",
+      "name": "КИСЛОТНАЯ АРКАДА",
+      "art_direction": "Striking graphic flat 2D arcade style: electric cobalt sky, warm vivid pink pig, acid lime grass edges, purple floating earth shapes, bright yellow highlights. Bold geometric silhouettes, thick dark navy outlines, compact highly expressive characters, clean simple shapes with screen-print grain. Floating graphic garden platforms over stylized blue void, minimal background with abstract clouds. Playful stylish indie arcade, not futuristic military, no 3D, no pixel art.",
+      "file": "09-neon-flat.png"
+    },
+    {
+      "number": "10",
+      "name": "ХРЮШКИН АЛЬБОМ",
+      "art_direction": "Expressive wax-crayon and colored-pencil 2D animation on warm off-white sketchbook paper. Visible lively imperfect colored-pencil outlines, broad waxy fills, playful scribble grass, turquoise sky hatch marks, pastel peach pink pig with red scarf, comic cinnamon horses. Floating grassy platforms look drawn by a talented illustrator with believable game readability; little paper margin doodles kept sparse. Joyful mischievous handmade indie adventure, no 3D, no pixel art.",
+      "file": "10-crayon.png"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "tool": "built-in image_gen",
+  "hud": {
+    "left": "3 hearts",
+    "center": "numeric total score",
+    "right": "apple icon + count",
+    "containers": false,
+    "title": false,
+    "distance": false
+  },
+  "prompts": [
+    "Use case: precise-object-edit. Edit ONLY the HUD / top strip of the provided gameplay screenshot. Preserve the entire game world, pig/cart pose, enemies, apples in world, rails, lighting, art style, framing and camera EXACTLY as they are. User wants an extremely minimal HUD directly over the gameplay. Completely REMOVE the dark full-width horizontal header bar at top, restore natural cave background seamlessly to top edge. Remove the game title/logo, all rounded rectangle cards/badges, their borders and backgrounds, the distance meter, and the word \"СЧЁТ\". New HUD consists of ONLY THREE spaced elements floating directly over cave background: TOP LEFT three small red heart icons in a row (small, about 28 pixels each in a 1672 pixel wide image, subtle dark outlines); TOP CENTER numeric score \"304\" in clean rounded off-white bold numerals approximately 34 pixels tall, very fine dark contour for contrast, horizontally centered exactly; TOP RIGHT one small golden apple icon with white number \"12\" beside it, approximately 28 pixels tall. Keep 25-35px top and side safe margins. No backing plates, containers, shadows under panels, pill shapes, full-width line or header, no title anywhere, no extra labels, no added UI. Top gameplay art must remain visible behind text. Preserve original aspect ratio. This is a local UI cleanup edit, not redesigning the game art.",
+    "Use case: precise-object-edit. Edit ONLY the HUD and top header area of the input upside-down mine-cart gameplay screenshot. Preserve pig and yellow cart UPSIDE DOWN with wheels touching ceiling rail, scarf, all rails, enemies, world apples, gate switches, scenery and camera exactly. Remove game name/title, all rounded HUD cards, all HUD panel backgrounds and borders, distance meter, text \"СЧЁТ\", and the large cyan gravity-arrow HUD badge at top center. Seamlessly restore ceiling stone backdrop where old HUD was. No horizontal bar or line at all. Replace HUD with ONLY three compact floating elements directly over cave art: at TOP LEFT three little red hearts in one row; at TOP CENTER exact numeric score \"1664\" in clean rounded off-white bold digits approximately 34px high, thin navy outline for legibility, exactly horizontally centered; at TOP RIGHT one small golden apple icon then white digits \"46\", about 28px high. Match small heart size about 28-32px per icon, generous 25-35px edge margins. No panels or pill containers behind anything. Keep the in-world gravity gates on the rail and their arrows unchanged; only remove the old large HUD gravity badge to leave center exclusively for score. HUD remains upright while player is upside down. Preserve all gameplay visuals and exact landscape framing. Do not redesign scene, no new objects."
+  ]
+}

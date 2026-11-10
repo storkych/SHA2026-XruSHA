@@ -1,0 +1,12 @@
+{
+  "background": {
+    "file": "mine-background.png",
+    "tool": "built-in image_gen",
+    "reference": "references/khryusha/runner-2026/01-gameplay-stomp-minimal-hud.png",
+    "prompt_summary": "A quiet dark teal and navy illustrated 2D mine parallax background matching the approved runner reference, faint mining gantries, no characters, rails, floor, HUD or collectibles.",
+    "usage": "Distant backdrop; all gameplay geometry and characters rendered separately."
+  },
+  "characters_and_terrain": "v2: original image_gen transparent painted atlases; pose selection, measured pivots, independent sprung chassis and rotating wheels implemented in Godot. Prompts: assets/runner/v2/prompts.json.",
+  "audio": "Locally synthesized sound bank and melody in scripts/sound.gd",
+  "animation_preview": "qa/captures/polish/KhryuSHA2026-preview.gif and .mp4: rendered with the same Godot hero rig."
+}
