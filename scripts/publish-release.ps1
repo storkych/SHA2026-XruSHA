@@ -43,7 +43,7 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Release upload failed; no release was published.' }
     $uploaded = $null
     for ($attempt = 1; $attempt -le 3; $attempt++) {
-        $releaseJson = gh release view $Tag --repo $Repository --json assets
+        $releaseJson = gh api "repos/$Repository/releases/tags/$Tag"
         if ($LASTEXITCODE -eq 0) {
             $uploaded = $releaseJson | ConvertFrom-Json
             break
@@ -57,9 +57,8 @@ try {
         $match = @($uploaded.assets | Where-Object { $_.name -eq $localFile.Name -and $_.size -eq $localFile.Length -and $_.state -eq 'uploaded' -and $_.digest -eq $expectedDigest })
         if ($match.Count -ne 1) { throw "Upload verification failed for $($localFile.Name); release remains draft." }
     }
-    gh release edit $Tag --repo $Repository --draft=false --latest
+    gh api --method PATCH "repos/$Repository/releases/$($uploaded.id)" -F draft=false -f make_latest=true --jq .html_url
     if ($LASTEXITCODE -ne 0) { throw 'Assets uploaded, but publishing failed; release remains draft.' }
-    gh release view $Tag --repo $Repository --json url --jq .url
 } finally {
     Pop-Location
 }
