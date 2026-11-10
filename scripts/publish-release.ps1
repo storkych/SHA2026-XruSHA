@@ -41,11 +41,20 @@ try {
     if ($LASTEXITCODE -eq 0) { throw "Release already exists: $Tag. Use a new version." }
     gh release create $Tag $exeAsset $zipAsset $checksums --repo $Repository --target $commit --draft --title "ХрюША2026 · $Tag" --notes-file (Join-Path $projectRoot 'RELEASE_NOTES.md')
     if ($LASTEXITCODE -ne 0) { throw 'Release upload failed; no release was published.' }
-    $uploaded = gh release view $Tag --repo $Repository --json assets | ConvertFrom-Json
-    if ($LASTEXITCODE -ne 0) { throw 'Cannot inspect draft release.' }
+    $uploaded = $null
+    for ($attempt = 1; $attempt -le 3; $attempt++) {
+        $releaseJson = gh release view $Tag --repo $Repository --json assets
+        if ($LASTEXITCODE -eq 0) {
+            $uploaded = $releaseJson | ConvertFrom-Json
+            break
+        }
+        if ($attempt -lt 3) { Start-Sleep -Seconds 2 }
+    }
+    if (-not $uploaded) { throw 'Cannot inspect draft release; it remains unpublished.' }
     foreach ($asset in @($exeAsset, $zipAsset, $checksums)) {
         $localFile = Get-Item -LiteralPath $asset
-        $match = @($uploaded.assets | Where-Object { $_.name -eq $localFile.Name -and $_.size -eq $localFile.Length })
+        $expectedDigest = 'sha256:' + (Get-FileHash -LiteralPath $asset -Algorithm SHA256).Hash.ToLowerInvariant()
+        $match = @($uploaded.assets | Where-Object { $_.name -eq $localFile.Name -and $_.size -eq $localFile.Length -and $_.state -eq 'uploaded' -and $_.digest -eq $expectedDigest })
         if ($match.Count -ne 1) { throw "Upload verification failed for $($localFile.Name); release remains draft." }
     }
     gh release edit $Tag --repo $Repository --draft=false --latest
